@@ -1,0 +1,45 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "browser": "main.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "browserify main.js -o browserifyEnv/bundle.js",
+    "webpack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangbbin/StudyReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangbbin/StudyReact/issues"
+  },
+  "homepage": "https://github.com/wangbbin/StudyReact#readme"
+}
