@@ -28,7 +28,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "browserify main.js -o browserifyEnv/bundle.js",
+    "build": "browserify form.js -o bundle.js",
     "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
