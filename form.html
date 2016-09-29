@@ -14,26 +14,26 @@
 
 
 <script type="text/babel">
-var LikeButton = React.createClass({
-  getInitialState: function() {
-    return {liked: false};
-  },
-  handleClick: function(event) {
-    this.setState({liked: !this.state.liked});
-  },
+var NotesList = React.createClass({
   render: function() {
-    var text = this.state.liked ? 'like' : 'haven\'t liked';
+  	var childs = React.Children.map(this.props.children, function (child) {
+          return <li>{child}</li>;
+        });
+  	console.log(childs)
     return (
-      <p onClick={this.handleClick}>
-        You {text} this. Click to toggle.
-      </p>
+      <ol>
+      {childs}
+      </ol>
     );
   }
 });
 
 ReactDOM.render(
-  <LikeButton />,
-  document.getElementById('example')
+  <NotesList>
+    <span>hello</span>
+    <span>world</span>
+  </NotesList>,
+  document.getElementById("example")
 );
 </script>
 
