@@ -4,6 +4,10 @@ var ReactDOMServer = require('react-dom/server');
 var element = React.createElement('div', null, 'Hello World!');
 console.log(ReactDOMServer.renderToString(element));
 
+console.log(process.env.NODE_ENV)
+console.log(process.env.DEBUG)
+console.log(process.env.DDBUG1)
+
 
 /*To install React DOM and build your bundle with browserify:
 
