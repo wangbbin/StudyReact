@@ -14,10 +14,14 @@
         }
       ],
       [
+        "uglifyify"
+      ],
+      [
         "babelify",
         {
           "presets": [
-            "react"
+            "react",
+            "es2015"
           ]
         }
       ]
@@ -32,6 +36,8 @@
     "jsx-loader": "^0.13.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "uglify-js": "^3.0.24",
+    "uglifyify": "^4.0.2",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
